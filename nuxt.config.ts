@@ -7,6 +7,11 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/nordhealth-vue/'
   },
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag.startsWith('nord-')
